@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Liên Quân Random Tool 🎲
 
-## Getting Started
+Một ứng dụng nhỏ được xây dựng bằng Next.js giúp bạn random tướng và lane trong game Liên Quân Mobile.
+Chỉ cần nhập tên người chơi, hệ thống sẽ tự động gán tướng + lane ngẫu nhiên cho họ.
 
-First, run the development server:
+Dữ liệu tướng được crawl tự động từ một nguồn web bên ngoài để luôn cập nhật mới nhất.
 
-```bash
+🚀 Getting Started
+
+Chạy server development:
+
 npm run dev
-# or
+# hoặc
 yarn dev
-# or
+# hoặc
 pnpm dev
-# or
+# hoặc
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Mở http://localhost:3000
+ trên trình duyệt để bắt đầu sử dụng.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⚡ Tính năng
 
-## Learn More
+🎮 Nhập tên người chơi → random tướng + lane.
 
-To learn more about Next.js, take a look at the following resources:
+🌀 Random công bằng, không trùng lặp giữa các người chơi.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🌐 Crawl dữ liệu tướng từ web khác → đảm bảo luôn cập nhật khi game ra tướng mới.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+⚡ Giao diện đơn giản, chạy mượt với Next.js + TypeScript + TailwindCSS.
 
-## Deploy on Vercel
+📂 Cấu trúc chính
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+app/page.tsx → giao diện nhập tên người chơi và random kết quả.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+utils/crawler.ts → hàm crawl dữ liệu tướng từ web.
+
+utils/randomizer.ts → logic random tướng + lane.
+
+🔗 Learn More
+
+Next.js Documentation
+
+TailwindCSS
+
+Liên Quân Mobile (official site)
+
+🚀 Deploy
+
+Bạn có thể deploy trực tiếp trên Vercel
+ để dùng online:
+
+vercel
