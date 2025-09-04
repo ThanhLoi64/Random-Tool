@@ -7,8 +7,6 @@ Dữ liệu tướng được crawl tự động từ một nguồn web bên ngo
 
 🚀 Getting Started
 
-Chạy server development:
-
 npm run dev
 # hoặc
 yarn dev
@@ -16,7 +14,6 @@ yarn dev
 pnpm dev
 # hoặc
 bun dev
-
 
 Mở http://localhost:3000
  trên trình duyệt để bắt đầu sử dụng.
